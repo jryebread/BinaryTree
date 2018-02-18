@@ -2,7 +2,7 @@ public class BinaryTree<T> {
     Node<T> root;
 
     public Node<T> findNode(int key) {
-        Node focusNode = root;
+        Node<T> focusNode = root;
         while(focusNode.key != key) {
             if(key < focusNode.key) {
                 focusNode = focusNode.leftChild;
