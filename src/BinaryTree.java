@@ -1,7 +1,7 @@
 public class BinaryTree<T> {
     Node<T> root;
 
-    public Node findNode(int key) {
+    public Node<T> findNode(int key) {
         Node focusNode = root;
         while(focusNode.key != key) {
             if(key < focusNode.key) {
@@ -42,7 +42,7 @@ public class BinaryTree<T> {
         }
 
     }
-    public void inOrderTraversal(Node focusNode) {
+    public void inOrderTraversal(Node<T> focusNode) {
         if(focusNode!= null) {
             inOrderTraversal(focusNode.leftChild);
             System.out.println(focusNode.data);
